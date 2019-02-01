@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="assets/css/main1.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="form-css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="form-css/form-animate.css">
+    <link rel="stylesheet" type="text/css" href="form-css/form-util.css">
+    <link rel="stylesheet" type="text/css" href="form-css/form-main.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -31,9 +35,24 @@
     <style>
         .test-img {
             width: 100%;
-            height: 100%;
-            padding-bottom: 20px;
+            /* height: 100%; */
+            padding-bottom: 10px;
         }
+        img.test-img1 {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 10px;
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .8s ease-in-out;  
+    }
+
+    img.test-img1:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
 
         .test-container-phoenix {
             /* background-color: #dcae1d; */
@@ -65,6 +84,7 @@
         }
 
         .test-container-brainstomer {
+            height: 60vh;
             /* background-color: #dc631d; */
             margin-top: 0%;
             color: black;
@@ -124,7 +144,10 @@
                 font-size: 18px !important;
             }
         }
-
+        .myrow{
+            background-color: white;
+            margin-top: 5%;
+        }
         @media only screen and (max-width: 480px) {
             .second-logo {
                 width: 100%;
@@ -132,6 +155,9 @@
                 margin-right: 5vw;
             }
         }
+      
+}
+
     </style>
 </head>
 <!-- ======================================================================================================== -->
@@ -178,6 +204,7 @@
                     <div class="col-lg-8 col-sm-6 col-footer">
                         <center>
                             <h1><span class="headline bg-hd">Phoenix</span></h1>
+                            <h1 style="height:2px; width:10vw; background-color:#00ad5f;"></h1>
 
                             <br>
                             <br>The official technical club of Netaji Subhash Engineering College was founded by a
@@ -227,6 +254,7 @@
                         <center>
                             <h1>
                                 <center class="bg-hd">BrainStormer</center>
+                                <h1 style="height:2px; width:10vw; background-color:#00ad5f;"></h1>
                             </h1>
                             <br>
                             <br> Annual inter-college quiz is an event of great importance, as it symbolizes the
@@ -253,9 +281,15 @@
             <img src="assets/images/g17.jpg" height="400" width="400" style="visibility:hidden;">
         </div> -->
 
-        <div class="test-container-gallery" style="background:white;">
+        <div class="test-container-gallery" style="background:white; height: 80vh;">
             <h1>
-                <center class="bg-hd">Heighlights Of BrainStormer</center>
+                <center class="bg-hd">
+                    Heighlights Of BrainStormer
+                </center>
+                <center>
+                    <h1 style="height:2px; width:10vw; background-color:#00ad5f;"></h1>
+                </center>
+
             </h1>
             <br>
             <br>
@@ -263,32 +297,32 @@
             <div class="container test-container">
                 <div class="row row-footer">
                     <div class="col-lg-3 col-sm-6 col-footer">
-                        <img class="test-img" src="assets/images/g16.jpg">
+                        <img class="test-img1" src="assets/images/gallery1.jpg">
                     </div>
                     <div class="col-lg-3 col-sm-6 col-footer">
-                        <img class="test-img" src="assets/images/g16.jpg">
+                        <img class="test-img1" src="assets/images/gallery2.jpg">
                     </div>
                     <div class="col-lg-3 col-sm-6 col-footer">
-                        <img class="test-img" src="assets/images/g16.jpg">
+                        <img class="test-img1" src="assets/images/gallery3.jpg">
                     </div>
                     <div class="col-lg-3 col-sm-6 col-footer">
-                        <img class="test-img" src="assets/images/g16.jpg">
+                        <img class="test-img1" src="assets/images/gallery4.jpg">
                     </div>
                 </div>
             </div>
             <div class="container test-container">
                 <div class="row row-footer">
                     <div class="col-lg-3 col-sm-6 col-footer">
-                        <img class="test-img" src="assets/images/g16.jpg">
+                        <img class="test-img1" src="assets/images/gallery5.jpg">
                     </div>
                     <div class="col-lg-3 col-sm-6 col-footer">
-                        <img class="test-img" src="assets/images/g16.jpg">
+                        <img class="test-img1" src="assets/images/gallery6.jpg">
                     </div>
                     <div class="col-lg-3 col-sm-6 col-footer">
-                        <img class="test-img" src="assets/images/g16.jpg">
+                        <img class="test-img1" src="assets/images/gallery7.jpg">
                     </div>
                     <div class="col-lg-3 col-sm-6 col-footer">
-                        <img class="test-img" src="assets/images/g16.jpg">
+                        <img class="test-img1" src="assets/images/gallery8.jpg">
                     </div>
                 </div>
             </div>
@@ -299,12 +333,13 @@
         <div class="container test-container">
             <div class="row row-footer">
                 <div class="col-lg-4 col-sm-6 col-footer">
-                    <img class="test-img" src="assets/images/brainstomer-logo.png">
+                    <img class="test-img" src="assets/images/team.jpg" style="margin-top:5vh;">
                 </div>
                 <div class="col-lg-8 col-sm-6 col-footer">
                     <center>
                         <h1>
-                            <center class="bg-hd">BrainStormer</center>
+                            <center class="bg-hd">The Team</center>
+                            <h1 style="height:2px; width:10vw; background-color:#00ad5f;"></h1>
                         </h1>
                         <br>
                         <br> Annual inter-college quiz is an event of great importance, as it symbolizes the
@@ -319,13 +354,73 @@
                         and prizes worth Rs 25000 being given away. It has now become a brand name in the quizzing
                         circles
                         and is eagerly awaited each year by quiz enthusiasts every year.
+                        <br>
+                        <br>
                     </center>
                 </div>
             </div>
         </div>
         <!-- =================================================================================================================== -->
-        <div style="height:100vh; background: black;">
-
+        <div class="register" style="height:100vh; background: white; ">
+            <h1>
+                <center class="bg-hd">Register</center>
+                <center>
+                    <h1 style="height:2px; width:10vw; background-color:#00ad5f;"></h1>
+                </center>
+            </h1>
+            <form>
+                <div class="container mywrapper">
+                    <div class=" row myrow">
+                        <div class="col-lg-6 col-sm-6 column">
+                            <label class="label-input100" for="first-name"><b>Tell Us Your Team Name *</b></label>
+                            <div class="wrap-input100  validate-input" data-validate="Type first name">
+                                <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 column">
+                            <label class="label-input100" for="Member One"><b>Member Name 1 *</b></label>
+                            <div class="wrap-input100  validate-input" data-validate="Type first name">
+                                <input id="memone" class="input100" type="text" name="first-name" placeholder="First name">
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 column">
+                            <label class="label-input100" for="Member One"><b>Member Name 2 *</b></label>
+                            <div class="wrap-input100  validate-input" data-validate="Type first name">
+                                <input id="memtwo" class="input100" type="text" name="first-name" placeholder="First name">
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 column">
+                            <label class="label-input100" for="email"><b>Tell Us Your Email *</b></label>
+                            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                                <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 column">
+                            <label class="label-input100" for="phone"><b>Tell Us Your Phone Number *</b></label>
+                            <div class="wrap-input100">
+                                <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 column">
+                            <label class="label-input100" for="phone"><b>Tell Us Your Institue Name *</b></label>
+                            <div class="wrap-input100">
+                                <input id="phone" class="input100" type="text" name="phone" placeholder="">
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+                        <div class="container-contact100-form-btn">
+                            <button class="contact100-form-btn">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
 
         <!-- =================================================================================================================== -->
@@ -339,10 +434,15 @@
                     <div class="col-md-4 col-xl-5">
                         <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png"
                                     alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
-                            <p>We are an award-winning creative agency, dedicated to the best result in web design,
-                                promotion, business consulting, and marketing.</p>
-                            <!-- Rights-->
-                            <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All
+                            <p style="color:white;font-family: 'Acme', sans-serif;
+                            font-family: 'Catamaran', sans-serif;
+                            font-family: 'Play', sans-serif;
+                            font-family: 'Staatliches', cursive;
+                            font-family: 'Courgette', cursive; font: 20px;">Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                impedit quasi magnam
+                                minus odio totam venia exercitationem repudiandae incidunt blanditiis magni</p>
+                            <p class="rights" style="color:white;"><span>©  </span><span class="copyright-year">2019</span><span> </span><span>Phoenix</span><span>. </span><span>All
                                     Rights Reserved.</span></p>
                         </div>
                     </div>
@@ -378,11 +478,9 @@
                 <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Anurag</span></a></div>
                 <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>Aniket</span></a></div>
                 <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>Shashawat</span></a></div>
-                <!-- <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div> -->
             </div>
         </footer>
         <!-- =================================================================================================================== -->
-
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="main.js"></script>
         <script>
