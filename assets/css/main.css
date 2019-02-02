@@ -126,12 +126,13 @@ ul, ol {
 
 @media screen and (max-width: 500px){
   .gallery{
-    height: 340vh;
+    height: 380vh;
   }
 }
 
-/* @media screen and (max-width: 500px){
+@media screen and (max-width: 500px){
   .register{
     margin-bottom: 50vh;
+  height: 200vh;
   }
-} */
+}
