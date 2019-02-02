@@ -131,6 +131,11 @@ ul, ol {
 }
 
 @media screen and (max-width: 500px){
+  .takleef{
+    height: 170vh;
+  }
+}
+@media screen and (max-width: 500px){
   .register{
     margin-bottom: 50vh;
   }
