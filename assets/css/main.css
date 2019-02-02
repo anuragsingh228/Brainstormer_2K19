@@ -130,8 +130,8 @@ ul, ol {
   }
 }
 
-@media screen and (max-width: 500px){
+/* @media screen and (max-width: 500px){
   .register{
     margin-bottom: 50vh;
   }
-}
+} */
